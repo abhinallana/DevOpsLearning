@@ -1,0 +1,71 @@
+Commonly used Commands in Linux ......
+
+who -> abhi     :0           2022-11-04 16:00 (:0) (provides username with time/date)
+whoami -> abhi (provides just the user name)
+ls -> lists files present in the folder/directory(only non-hidden)
+ls -a -> lists all files present in the folder/directory.
+mkdir -> creates a directory
+
+Write data into file and View:
+
+cat
+create
+rm(remove)
+cp(copy)
+mv(move)
+
+Memory Utilisation and Hard disk Utilisation
+
+df -h -> gives all the amount of memory used by each drive/disk in human readable format
+df -ha 
+df -a
+
+abhi@mr:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           796M  1.7M  795M   1% /run
+/dev/sda1        31G   25G  4.2G  86% /
+tmpfs           3.9G   24M  3.9G   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+
+*reboot
+*shutdown
+*logout
+
+Transferring data from server to local machine via CLI -
+
+curl
+wget
+
+find ->  find files and directories and perform subsequent operations on them. supports searching by file, folder, 
+name, creation date, modification date, owner and permissions.
+
+locate ->  finds files in Linux using the file name. locate is used for obtaining instantaneous results when speed matters.
+
+
+text editors for modifying and creating contents.
+
+vim
+nano
+gedit
+
+
+Link -> type of file in Linux that points to another file or a folder on your computer.
+
+*syntax -> ln -s <path to the file/folder to be linked> <the path of the link to be created>
+
+e.g: abhi@mr:~$ ln -s /home/abhi/demofile.txt tools/dfile.txt
+     abhi@mr:~$ cd tools
+     abhi@mr:~/tools$ ls
+     dfile.txt
+
+grep -> used to find a particular keyphrase/keyword
+
+Reading and Updating Larger texts ->
+
+less -> shows a file's contents one screen at a time. useful for larger textfiles. (thorough study required)
+more -> more allows us to view them as a single file separated by lines. expands the textfile in more readable form.
+
+
+
