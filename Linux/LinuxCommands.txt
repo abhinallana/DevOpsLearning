@@ -2,6 +2,7 @@ Commonly used Commands in Linux ......
 
 who -> abhi     :0           2022-11-04 16:00 (:0) (provides username with time/date)
 whoami -> abhi (provides just the user name)
+man -> manual command -> e.g man ls (will show the complete usage of ls command)
 ls -> lists files present in the folder/directory(only non-hidden)
 ls -a -> lists all files present in the folder/directory.
 mkdir -> creates a directory
