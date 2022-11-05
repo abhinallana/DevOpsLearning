@@ -67,6 +67,27 @@ Reading and Updating Larger texts ->
 
 less -> shows a file's contents one screen at a time. useful for larger textfiles. (thorough study required)
 more -> more allows us to view them as a single file separated by lines. expands the textfile in more readable form.
+tail -> gives the output to the last part of files
+
+
+awk -> https://phoenixnap.com/kb/awk-command-in-linux#awk-operations
+
+e.g. : 
+abhi@mr:~$ cat demo.txt
+a,1,1
+b,3,4
+c,5,3
+d,4,4
+e,7,6
+f,8,8
+
+abhi@mr:~$ awk -F ',' '{if($2==$3){print $1","$2","$3} else {print "No Duplicates"}}' demo.txt
+a,1,1
+No Duplicates
+No Duplicates
+d,4,4
+No Duplicates
+f,8,8
 
 
 
