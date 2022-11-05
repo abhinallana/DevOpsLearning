@@ -70,7 +70,7 @@ more -> more allows us to view them as a single file separated by lines. expands
 tail -> gives the output to the last part of files
 
 
-awk -> https://phoenixnap.com/kb/awk-command-in-linux#awk-operations
+awk -> '''https://phoenixnap.com/kb/awk-command-in-linux#awk-operations'''
 
 e.g. : 
 abhi@mr:~$ cat demo.txt
