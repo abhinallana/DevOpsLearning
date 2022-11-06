@@ -30,7 +30,7 @@ Write data into file and View:
 
 cat
 create
-rm(remove)
+rm(remove), rmdir(remove dir)
 cp(copy)
 mv(move)
 
@@ -80,7 +80,9 @@ e.g: abhi@mr:~$ ln -s /home/abhi/demofile.txt tools/dfile.txt
      abhi@mr:~/tools$ ls
      dfile.txt
 
-grep -> used to find a particular keyphrase/keyword
+grep -> used to find a particular keyphrase/keyword/string
+grep -i
+grep -n
 
 Reading and Updating Larger texts ->
 
@@ -108,5 +110,40 @@ d,4,4
 No Duplicates
 f,8,8
 
+Sorts in alphabetically/numerically
 
+* sort <filename>
+  sort -r <filename> reverse order
+  sort -f <filename> case insensitive
+  sort -n <filename> numerical order
+
+
+chown -> sudo chown root <filename>
+chmod 
+
+lsof -> lists all the open files.
+
+id -> shows username and list of users and security context
+
+e.g.: 
+
+abhi@mr:~/Desktop/dummies$ id
+uid=1000(abhi) gid=1000(abhi) groups=1000(abhi),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare),998(docker)
+abhi@mr:~/Desktop/dummies$ id -g abhi
+1000
+
+tar -> used to zip/unzip the file/folder
+
+syntax (zip)-> tar -cvf <filename> <sourceFolder>
+(unzip) -> tar -xvf <tar-filename> <sourceFolder>
+
+
+sed -> texteditor non interactive mode
+
+e.g.:
+
+abhi@mr:~/Desktop/dummies$ cat sedtest.txt
+hello abhi ! how are you?
+abhi@mr:~/Desktop/dummies$ sed 's/abhi/ashish/' sedtest.txt
+hello ashish ! how are you?
 
