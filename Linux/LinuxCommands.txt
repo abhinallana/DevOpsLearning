@@ -6,6 +6,25 @@ man -> manual command -> e.g man ls (will show the complete usage of ls command)
 ls -> lists files present in the folder/directory(only non-hidden)
 ls -a -> lists all files present in the folder/directory.
 mkdir -> creates a directory
+pwd -> present working directory
+cd -> change directory (cd, cd ., cd ..)
+echo -> to echo the lines which u want to display(echo "hello")
+touch -> to create a new file
+
+To be and access root user :
+
+sudo su / sudo bash
+
+To Create a new user and update:
+
+sudo useradd <name>
+sudo passwd <pwd>
+sudo userdel <name>
+
+To create a Group:
+
+sudo groupadd <grpname>
+sudo groupdel <grpname>
 
 Write data into file and View:
 
