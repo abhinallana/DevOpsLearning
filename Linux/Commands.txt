@@ -1,0 +1,89 @@
+﻿Date & Time	--->
+1. monika@Monika-Chaudhary:~$ date		
+Wednesday 09 November 2022 07:12:01 PM IST
+
+2. monika@Monika-Chaudhary:~$ date "+%Y-%m-%d-%H-%M-%S"		
+2022-11-09-19-20-36
+
+Logged in user	--->
+1. monika@Monika-Chaudhary:~$ whoami	
+monika
+
+2. monika@Monika-Chaudhary:~$ who	
+monika   :1           2022-11-09 18:32 (:1)
+
+3. monika@Monika-Chaudhary:~$ w	
+20:37:46 up 45 min,  1 user,  load average: 0.07, 0.14, 0.13
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+monika   :1       :1               19:52   ?xdm?   5:16   0.00s /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session -
+
+Show how long system active	--->
+monika@Monika-Chaudhary:~$ uptime	->	19:49:30 up  1:17,  1 user,  load average: 1.32, 0.46, 0.16
+
+User info	--->
+1. monika@Monika-Chaudhary:~$ id		
+uid=1000(monika) gid=1000(monika) groups=1000(monika),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+
+2. monika@Monika-Chaudhary:~$ users		
+monika
+
+All users logged in & out	--->
+1. monika@Monika-Chaudhary:~$ last		
+monika   :1           :1               Wed Nov  9 18:32   still logged in
+reboot   system boot  5.4.0-132-generi Wed Nov  9 18:31   still running
+monika   :1           :1               Mon Nov  7 21:33 - down   (00:16)
+reboot   system boot  5.4.0-132-generi Mon Nov  7 21:33 - 21:50  (00:16)
+monika   :1           :1               Wed Nov  2 22:47 - down   (00:05)
+reboot   system boot  5.4.0-132-generi Wed Nov  2 22:47 - 22:53  (00:05)
+monika   :1           :1               Wed Nov  2 22:44 - down   (00:02)
+
+Manual	--->
+monika@Monika-Chaudhary:~$ man ls	(man anyCommand)
+
+Listing directory	--->
+1. monika@Monika-Chaudhary:~$ ls
+
+2. show hidden directory also	->	monika@Monika-Chaudhary:~$ ls -a
+
+3. long listing with alphabetic order	->	monika@Monika-Chaudhary:~$ ls -l
+-rw-rw-r--  1 monika monika      16083 Nov  2 00:50 ant-apache-resolver.jar
+drwxr-xr-x  3 monika monika       4096 Nov  7 20:12 Desktop
+drwxrwxr-x  4 monika monika       4096 Nov  9 18:48 DevOpsLearning
+drwxr-xr-x 23 monika monika       4096 Nov  9 21:22 Documents
+drwxr-xr-x  6 monika monika       4096 Nov  7 19:49 Downloads
+
+4. long listing with timestamp	->	monika@Monika-Chaudhary:~$ ls -lt
+drwxr-xr-x 23 monika monika       4096 Nov  9 21:22 Documents
+drwxrwxr-x  4 monika monika       4096 Nov  9 18:48 DevOpsLearning
+drwxr-xr-x  3 monika monika       4096 Nov  7 20:12 Desktop
+drwx------  4 monika monika       4096 Nov  7 19:54 snap
+drwxr-xr-x  5 monika monika       4096 Nov  7 19:52 Pictures
+
+5. long listing with timestamp in reverse	->	monika@Monika-Chaudhary:~$ ls -ltr
+-rw-rw-r--  1 monika monika 3826831360 Oct 31 22:51 ubuntu.iso
+-rwxrwxr-x  1 monika monika      17534 Nov  1 16:04 wireless-info
+-rw-rw-r--  1 monika monika      11504 Nov  1 16:04 wireless-info.txt
+-rw-r--r--  1 monika monika       8980 Nov  1 20:43 examples.desktop
+
+6. Permission of particular directory	->	monika@Monika-Chaudhary:~$ ls -ld Documents
+drwxr-xr-x 23 monika monika 4096 Nov 15 20:19 Documents
+
+Previous executed commands	--->
+1. All history	->	monika@Monika-Chaudhary:~$ history
+2. show last history limited by number	->	monika@Monika-Chaudhary:~$ history 5	(history number)
+
+File related	--->
+1. Create empty file	->	monika@Monika-Chaudhary:~$ touch newFile	(touch fileName)
+2. Create multiple file	->	monika@Monika-Chaudhary:~$ touch car{1..5}.txt	(touch fileName{1..n}.ext)
+3. View file content	->	monika@Monika-Chaudhary:~$ cat file.txt
+4. Write data into empty file	->	monika@Monika-Chaudhary:~$ cat > car1.txt	(car > fileName.ext)
+5. Remove file	->	monika@Monika-Chaudhary:~$ rm car1.txt
+6. Remove multiple files	->	monika@Monika-Chaudhary:~$ rm car2.txt car3.txt car4.txt
+
+Directory Related	--->
+1. Make directory	->	monika@Monika-Chaudhary:~$ mkdir myDir
+2. Multiple Directory	->	monika@Monika-Chaudhary:~$ mkdir mydir1 mydir2 mydir3
+3. Remove Empty directory	->	monika@Monika-Chaudhary:~$ rmdir mydir4
+4. Remove multiple directory	->	monika@Monika-Chaudhary:~$ rmdir mydir1 mydir2 mydir3
+5. Remove non-empty directory	->	monika@Monika-Chaudhary:~$ rm -rf myDir	(-r : recursively -f : force)
+6. Remove everything from pwd	->	rm -rf *	(risky command as no recovery)
