@@ -1,0 +1,17 @@
+chmod Commands
+
+0 = 0 = nothing
+1 = 1 = execute (x)
+2 = 2 = write (w)
+3 = 2+1 = w+x
+4 = 4 = read (r)
+5 = 4+1 = r+x
+6 = 4+2 = r+w
+7 = 4+2+1 = r+w+x
+
+
+e.g. --> chmod 777 files.txt
+
+7 -> will r+w+x for the user
+7 -> will r+w+x to the userGroup
+7 -> to the external users will help to r+w+x

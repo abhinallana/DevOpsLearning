@@ -1,0 +1,40 @@
+******   To run any shell file -> ./filename.sh    ********
+
+Commands to change permission - chmod 770 filename.sh
+
+1.  Output for hello.sh ->
+
+abhi@mr:~/Desktop/DevOpsLearning/shell-scripting$ ./hello.sh
+hello from bash
+What is your name? 
+Abhi
+Hello Abhi
+
+2 . Output for variables.sh ->
+
+abhi@mr:~/Desktop/DevOpsLearning/shell-scripting$ ./variables.sh
+Abhi
+
+abhi@mr:~/Desktop/DevOpsLearning/shell-scripting$ ./variables.sh
+./variables.sh: 10: ./variables.sh: NAME: is read only
+
+abhi@mr:~/Desktop/DevOpsLearning/shell-scripting$ ./variables.sh
+
+
+
+3. Output for variable2.sh
+
+abhi@mr:~/Desktop/DevOpsLearning/shell-scripting$ ./variable2.sh this is shellscripting
+File Name:./variable2.sh
+First parameter:this
+Second parameter:is
+Third parameter:shellscripting
+Quoted values:this is shellscripting
+Quoted values:this is shellscripting
+No. of Parameters:3
+
+
+
+
+
+
