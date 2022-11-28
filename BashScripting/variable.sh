@@ -7,6 +7,15 @@ echo "my string : "${str}
 echo 'string : $str'
 echo "string : $str"
 
+#put \ before special char while printing special char
+echo "hello is this special char \$ \$char"
+
+#command substituion : put output of command in variable using `command` or $(command)   [` - backtick]
+var1=`ls`
+echo "var1 : $var1"
+var2=$(ls)
+echo "var2 : $var2"
+
 #export variable : global accessible before logout, for permanent setup -> export in ~/.profile , ~/.bashrc , /etc/profile
 myString="globalVar"
 export myString
