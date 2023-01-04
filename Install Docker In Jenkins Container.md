@@ -7,7 +7,7 @@ this port is where the Jenkins master and worker nodes would be communicating fr
 
 Run the command inside the Jenkins Container. in interactive shell mode:
 
-''' docker exec -it --user root <container id> bash '''
+''' docker exec -it --user root (<container id>) bash '''
 
 Once inside the Jenkins container, simply run this command to install docker inside of the Jenkins container:
 
