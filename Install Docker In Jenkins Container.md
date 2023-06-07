@@ -1,4 +1,7 @@
-expose the port 8080 from the container and bind it on our host machine at port 8080 as well, so we can access Jenkins on this docker container. 
+---------------------------------------Run DOCKER inside Jenkins Container-------------------------------------------------------
+
+Expose the port 8080 from the container and bind it on our host machine at port 8080 as well, so we can access Jenkins on this docker container. 
+
 We are going to open another port 50000 and bind it to the host machine, 
 this port is where the Jenkins master and worker nodes would be communicating from and running in Detached mode and mounting Volume to it.
 
