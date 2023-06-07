@@ -1,0 +1,200 @@
+Linux is process oriented operating system..
+
+unix is also a type of OS which consists of 4 types:
+
+1. sun solaris  (enterprise and paid version)
+2. Redhat Linux ( open source and free of cost ) 
+3. IBM-AIX   (enterprise and paid version)
+4. HP-UNIX..  (enterprise and paid version)
+
+4 types of Users :
+
+===>> rootuser / parent user / super user / Admin user
+
+
+------------------------------------------------------------
+
+To write File Operations:
+
+cat > abhi.txt
+
+--> This command will allow you to type the content inside abhi.txt later #ctrl + d ==> save.
+
+
+*Append the data in a file:
+
+cat >> filename
+
+If file1 ==>>> data and file2 is empty file ==>> file1 data copy to file2. ==>>> redirect.
+
+cat file1 > file2
+
+----------------Filter Commands----------------------------
+
+1. head  -> gives the top 10 users to display
+e.g.->
+
+abhi@devops:~$ head /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+
+2. tail -> gives the bottom 10 users to display
+
+e.g. -> 
+
+abhi@devops:~$ tail /etc/passwd
+geoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+abhi:x:1000:1000:Abhi,,,:/home/abhi:/bin/bash
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+git:x:123:128:Git Version Control,,,:/home/git:/bin/bash
+mysql:x:124:129:MySQL Server,,,:/nonexistent:/bin/false
+jenkins:x:122:127:Jenkins,,,:/var/lib/jenkins:/bin/bash
+postgres:x:125:130:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+demo-user:x:1001:1001::/home/demo-user:/bin/sh
+
+3. more -> used to display the complete users in Linux server page by page. 
+(to see keep on pressing <space bar>)
+
+4. less -> used to display the users in descendin order page by page. 'Press q to quit.'
+
+----------------------------------------------------------------------------------
+
+VI Editor:
+
+vi editor has 3 types of modes..
+
+1. CLI mode.
+
+2. Insert mode.
+
+3. Extended mode.
+
+vi demo ====>> CLI mode
+
+press " i " key ==>> insert mode.
+
+I am new to Linux..
+
+escape shift:wq! ===>>> save ===>>> extended mode.
+
+cat demo
+
+---------------------------------------------------------------------------------
+
+grep : This command is used to fliter the words with specific phrase or characters.
+
+e.g. ->
+
+abhi@devops:~$ df -h | grep docker
+/dev/loop22     140M  140M     0 100% /snap/docker/2746
+/dev/loop28     125M  125M     0 100% /snap/docker/2856
+
+--> it filtered the word with docker and shows the results.
+
+i ==>> ignore case sensitive
+
+==>  ls -l | grep -i A
+----------------------------------------------------------------------------------
+
+find:
+
+--> find / -options keyword
+
+options :
+
+1. files 
+
+2. directories
+
+3. users
+
+4. groups
+
+5. inum ==>>> inode number ==>> 4 digit number.
+
+e.g ->
+
+find / -name demo
+
+find / -name abhi
+
+find / -user chinnu
+
+find / -group aws
+
+find / -inum 1234
+
+--------------------------------------------------------------------------
+files and directory permissions : ===>> security
+
+security ===>> userlevel , grouplevel , otherlevel..
+
+ls -l
+
+- ==>> file
+
+d ==>> directory
+
+c ==>> charecter file
+
+b ==>> block file
+
+l ==>> link file.
+
+rw- ( u = userlevel)   r-- (g = grouplevel )  r-- ( o = otherslevel)
+
+r ==>>> read ===>> 4
+
+w ==>> write ===>> 2
+
+x ==>> execute ==>> 1
+
+By using this command ==>> chmod command ==>> change modification.
+
+2 types methods to giving the files and directory permissions.
+
+1. symbolic method. -> giving chmod rwx <filename>
+
+    e.g.-> chmod u=rw,g=wx,o=rx demofile
+
+2. Absolute method. -> giving chmod 421 <filename>
+
+    e,g, -> chmod 700 demofile
+
+
+========================================================================
+
+*file full permissions : 666
+
+*directory full permissions : 777
+
+*default file permissions : 644
+
+*default directory permissions : 755
+
+*umask ==>> 022 / 0022 - default file n folder permissions stores here.
+
+*666 - 022 ==>> 644
+
+*777 - 022 ==>> 755
+
+========================================================================
+Change Ownership -> chown
+
+chown -R username:username <directoryname>
+
+note: if not working try with "sudo"
+
+
+
+
