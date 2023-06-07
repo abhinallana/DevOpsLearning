@@ -3,13 +3,20 @@ Commonly used Commands in Linux ......
 who -> abhi     :0           2022-11-04 16:00 (:0) (provides username with time/date)
 whoami -> abhi (provides just the user name)
 man -> manual command -> e.g man ls (will show the complete usage of ls command)
+
+-------------------------------ls-----------------------------------------
+
 ls -> lists files present in the folder/directory(only non-hidden)
 ls -a -> lists all files present in the folder/directory.
+ls -l ->  provides the directories and files with permissions.
+
+
+
 mkdir -> creates a directory
 pwd -> present working directory
 cd -> change directory (cd, cd ., cd ..)
 echo -> to echo the lines which u want to display(echo "hello")
-touch -> to create a new file
+touch -> to create a new empty file
 
 To be and access root user :
 
@@ -30,9 +37,23 @@ Write data into file and View:
 
 cat
 create
+----------------------------------------
+How to delete a file ?
+
 rm(remove), rmdir(remove dir)
-cp(copy)
-mv(move)
+
+=> rm -rf filename
+
+=> rm -rf abhi.
+--------------------------------------------
+cp(copy) --> cp <source location> <destination location>
+note : destination must be a directory/Folder.
+
+
+mv(move) --> mv <source location> <destination location>
+note : destination must be a directory/Folder.
+note: also used to rename the file/folder 
+e.g . > mv demo dummy1
 
 Memory Utilisation and Hard disk Utilisation
 
