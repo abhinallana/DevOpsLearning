@@ -67,3 +67,21 @@ docker network create my_custom_network
 docker network create --driver overlay my_overlay_network
 
 
+
+# Debugging Docker Container
+
+``` docker logs <container_id> ```
+
+``` docker inspect <con_id>```
+
+``` docker exec -it <con-id> /bin/bash ```
+
+for listing the running processes inside the running container -
+
+``` docker exec -it <con-id> ps aux```
+
+network connectivity
+
+``` docker exec -it <con-id> ping <hostname>```
+ 
+ ```docker stats <con-id> ``` -> used for monitoring and memory stats of the container.
